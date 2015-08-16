@@ -1,0 +1,84 @@
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta name="twitter:widgets:csp" content="on">
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<title>Twaps</title>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="sidebar-nav well">
+				<div class="myTweet">
+					<table class="table">
+						<thead>
+							<tr>
+								<center>
+									<H4>Twitter + Google Maps</strong></center></H4>
+							</tr>
+						</thead>
+					
+					</table>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="feed">
+					<table class="table table-hover">
+						<tbody id="jstweets"></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+				<div id="map_canvas"></div>
+			</div>
+		</div>
+
+		
+	</div>
+
+	<footer>
+		<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDbH6hw6hndOioh9dHGpoQfjb1QXkIyrbg&amp;sensor=true&libraries=places"></script>
+		<script src="//code.jquery.com/jquery-latest.js"></script>
+		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+		<script src="addMarkers.js"></script>
+		
+		<script src="nolocation.js"></script>
+
+
+		<script type="text/javascript">
+			! function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (!d.getElementById(id)) {
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js, fjs);
+				}
+			}(document, "script", "twitter-wjs");
+
+
+		</script>
+	</footer>
+</body>
+
+</html>
