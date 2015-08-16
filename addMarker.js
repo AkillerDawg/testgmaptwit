@@ -1,7 +1,7 @@
 var timeline = [];
 
 function getTweets(pos) {
-    $.getJSON('/twaps/oa.php?url=' + encodeURIComponent('search/tweets.json?geocode=' + pos.lat() + '%2C' + pos.lng() + 'to%3Adelta')).done(function(data) {
+    $.getJSON('/twaps/oa.php?url=' + encodeURIComponent('search/tweets.json?geocode=' + pos.lat() + '%2C' + pos.lng() + '%2C2mi&count=100')).done(function(data) {
         timeline.push(data.statuses);
         setMarker(data);
         //console.log(pos);
